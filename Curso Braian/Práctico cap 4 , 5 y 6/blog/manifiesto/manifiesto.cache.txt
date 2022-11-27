@@ -1,0 +1,13 @@
+#v 1.0
+#Este manifiesto corresponde a mi blog
+
+CHACHE MANIFEST
+index.html
+css/estilos.css/estilos
+img/abstracto.jpg
+audio/audio.mp3
+img/logo.svg
+img/valenciap.jpg
+img/oso.jpeg
+photo/dainazamudio.jpg
+video/lara.mp4

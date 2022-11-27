@@ -1,0 +1,444 @@
+/*Fuentes personalizadas*/
+
+@font-face {
+font-family: ubuntuRegular;
+src: url(fuentes/Ubuntu-Regular.ttf) format('truetype');
+}
+@font-face{
+font-family: ubuntuBold;
+src: url(fuentes/Ubuntu-Bold.ttf) format('truetype');
+}
+@font-face{
+font-family: ubuntuItalic;
+src: url(fuentes/Ubuntu-italic.ttf) format('truetype');
+}
+@font-face{
+font-family: ubuntuBoldItalic;
+src: url(fuentes/Ubuntu-boldItalic.tff) format('truetype');
+}
+
+/*Estilos Básicos*/
+h1,h2,h3,h4,h5,h6{
+font-family: ubuntuBold;
+}
+
+h1{
+/*transform:translate(150px 0px);
+-webkit-transform:translate(150px 0px);
+position:relative;*/
+color: white;
+font-size:16px;
+top:-20%;
+margin-top:10px;
+letter-spacing:0px;
+display: inline;
+text-shadow:2px 2px 5px rgba (0,0,0,0.5);
+
+}
+
+h2{
+color: white;
+font-size:16px;
+top:-20%;
+margin-top:10px;
+letter-spacing:0px;
+display:inline;
+
+}
+/*#tipo{
+position:absolute;
+transform:translate(100px 10px);
+-webkit-transform:translate(100px 10px);
+
+}*/
+
+h3{
+margin:0px;
+padding:0px;
+font-size:36px;
+text-shadow: 2px 2px 5px rgba (0,0,0,0.5);
+}
+
+h4{
+margin:0px;
+padding:0px;
+font-size:14px;
+text-shadow: 2px 2px 5px rgba (0,0,0,0.5);
+
+}
+
+p{
+font-family: ubuntuRegular;
+font-size:12px;
+text-align: justify;
+text-shadow: 1px 1px 3px rgba (0,0,0,0.4);
+}
+/*Menu de navegacion*/
+
+nav{
+display:inline;
+float:right;
+margin:20px;
+}
+nav ul{
+font-size: 12px;
+padding-left:0px;
+margin-left:0px;
+background-color: grey;
+color:white;
+width: 50%;
+font-family:uburuRegular;
+position:relative;
+display:inline;
+}
+nav ul li{
+display:inline;
+text-align:center;
+}
+
+nav ul li a{
+background:grey;
+color: white;
+text-decoration: none;
+float: right;
+border:1px solid white;
+border-radius:0px 10px 0px 10px;
+-moz-border-radius:0px 10px 0px 10px;
+-webkit-border-radius:0px 10px 0px 10px;
+-o-border-radius:0px 10px 0px 10px;
+box-shadow:0px,0px 5px white;
+width:80px;
+}
+nav ul li a:hover{
+background:white;
+color:black;
+box-shadow:0px 0px 25px white;
+}
+
+canvas{
+border:0px solid white;	
+}
+
+/*Maquetación principal*/
+
+body{
+text-align: center;
+margin:0px;
+background: grey;
+background:url('../img/abstracto.jpg');
+}
+
+#principal{ 
+text-align:left;
+margin:auto;
+width:80%;
+height:100%;
+position:relative;
+
+
+}
+
+#cajaheader {
+width:100%;
+height:100px;
+position:absolute;
+background:rgba(255,255,255,0.8);
+}
+
+header{
+margin:auto;
+text-align: left;
+width:100%;
+height:100px;
+/*background:darkgrey;*/
+overflow:hidden;
+	
+border: 2px solid white;
+	
+border-radius: 5px 35px 0px 0px;
+-moz-border-radius :5px 35px 0px 0px;
+-webkit-border-radius: 5px 35px 0px 0px;
+-o-border-radius: 5px 35px 0px 0px;
+	
+box-shadow: 0px 0px 10px white;
+-moz-box-shadow: 0px 0px 10px white;
+-webkit-box-shadow: 0px 0px 10px white;
+-o-box-shadow: 0px 0px 10px white;
+
+}
+#logo{
+width:100px;
+height:100px;
+display:inline;
+position:relative;
+}	
+
+
+footer{
+display:table;
+margin:auto;
+text-align:center;
+width:100%;
+background:darkgray;
+border: 2px solid white;
+border-radius: 0px 0px 5px 35px;
+-moz-border-radius: 0px 0px 5px 35px;
+-webkit-border-radius: 0px 0px 5px 35px;
+-o-border-radius: 0px 0px 5px 35px;
+	
+box-shadow: 0px 0px 10px white;
+-moz-box-shadow: 0px 0px 10px white;
+-webkit-box-shadow: 0px 0px 10px white;
+-o-box-shadow: 0px 0px 10px white;
+}
+/*Contenido*/
+
+#contenido{
+width:100%;
+border: 2px solid white;
+
+box-shadow: 0px 0px 10px white;
+-moz-box-shadow: 0px 0px 10px white;
+-webkit-box-shadow: 0px 0px 10px white;
+-o-box-shadow: 0px 0px 10px white;
+background:rgba (255,255,255,1);
+}
+
+article{
+width:55%;
+/*background:white;*/
+background:rgba (255,255,255,0);
+/*float:left;*/
+margin:10px;
+height:100%;
+/*display:table;*/
+border:1px solid white;
+border-radius:0px 25px 0px 25px;
+-webkit-border-radius:0px 25px 0px 25px;
+-moz-border-radius:0px 25px 0px 25px;
+-o-border-radius:0px 25px 0px 25px;
+box-shadow:3px 3px 10px black;
+-webkit-box-shadow:3px 3px 10px black;
+padding: 10px 10px 10px 150px;
+opacity:0.5;
+transition: opacity 1s, box-shadow 1s, transform 1s, background 1s;
+-webkit-transition: opacity 1s,-webkit-box-shadow 1s, -webkit-transform 1s, background 1s;
+transform:scale(1,1);
+-webkit-transform:scale(1,1);
+}
+
+article:hover{
+/*color:rgba (0,0,0,1);*/
+background:rgba (255,255,255,1);
+opacity:1;
+transform:scale(1.1,1.1);
+-webkit-transform:scale(1.1,1.1);
+-moz-transform:scale(1.1,1.1);
+box-shadow:0px 0px 25px white;
+-webkit-box-shadow:0px 0px 25px white;
+
+}
+
+time{
+font-family:ubuntuRegular;
+font-size:10px;	
+}
+
+aside{
+float:right;
+display:inline-table; 
+width:20%;
+/*background:rgba(255,255,255,0.5);*/
+margin:10px;
+padding:10px;
+border:1px solid white;
+border-radius:0px 25px 0px 25px;
+-webkit-border-radius:0px 25px 0px 25px;
+box-shadow:3px 3px 10px black;
+-webkit-box-shadow:3px 3px 10px black;
+text-decoration:none;
+}
+aside ul{
+width:100%;
+height: 100%;
+padding-left:0;
+padding-right:0;
+color:white;
+float:left;
+font-family:ubuntuRegular;
+font-size:10px;
+text-decoration:none;
+list-style:none;
+}
+
+aside ul li{
+width:100%;
+text-decoration:none;
+border:1px solid white;
+border-radius:0px 5px 0px 5px;
+-webkit-border-radius:0px 5px 0px 5px;
+text-decoration:none;
+}
+
+aside ul li a{
+width:100%;
+height:30px;
+overflow:hidden;
+text-decoration:none;
+}
+
+
+#sobremi{
+width:100%;
+height: 120%;
+background:blue;
+color:white;
+display:table;
+background:black;
+font-size: 10px;
+text-decoration:none;
+text-align:justify;
+overflow:hidden;
+}
+
+#sobremi a{
+color:white;
+text-decoration: none;
+
+}
+#mifoto {
+width:100px;
+height:120px;
+font-family:ubuntuBold;
+font-size: 20px;
+color: white;
+text-align:left;	
+
+background: url('../photo/daianazamudio.jpg');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+display:box;
+
+border: 1px solid white;
+border-radius: 0px 10px 0px 10px;
+box-shadow: 0px 0px 10px white;
+-webkit-border-radius: 0px 10px 0px 10px;
+-webkit-box-shadow: 0px 0px 10px white;
+float: left;
+margin:10px;
+animation: parpadeo 5s;
+-webkit-animation: papadeo 5s;
+animation-iteration-count: infinite;
+-webkit-animation-iteration-count:infinite;
+
+}
+
+@keyframes papadeo{
+0% {box-shadow: 0px 0px 10px white;}
+50% {box-shadow: 0px 0px 50px white;}
+100% {box-shadow: 0px 0px 10px white;}
+}
+
+@-webkit-keyframes papadeo{
+0% {-webkit-box-shadow: 0px 0px 10px white;}
+50% {-webkit-box-shadow: 0px 0px 50px white;}
+100% {-webkit-box-shadow: 0px 0px 10px white;}
+}
+
+
+
+
+#logofamilia{
+width:100px;
+height:100px;
+font-family:ubuntuBold;
+font-size: 20px;
+color: white;
+text-align:left;	
+
+
+background: url('../img/oso.jpeg');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+display:box;
+
+border: 1px solid white;
+border-radius: 0px 10px 0px 10px;
+box-shadow: 0px 0px 10px white;
+-webkit-border-radius: 0px 10px 0px 10px;
+-webkit-box-shadow: 0px 0px 10px white;
+float: left;
+margin:10px;
+
+position:absolute;
+transform:translate (-140px,0px);
+-webkit-transform:translate(-140px,0px);
+}
+
+#logoviaje {
+width:100px;
+height:100px;
+font-family:ubuntuBold;
+font-size: 20px;
+color: white;
+text-align:left;	
+
+background: url('../img/valenciap.jpg');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+display:box;
+
+border: 1px solid white;
+border-radius: 0px 10px 0px 10px;
+box-shadow: 0px 0px 10px white;
+-webkit-border-radius: 0px 10px 0px 10px;
+-webkit-box-shadow: 0px 0px 10px white;
+float: left;
+margin:10px;
+
+position:absolute;
+transform:translate (-140px,0px);
+-webkit-transform:translate(-140px,0px);
+}
+
+[required]{
+	border-color:green;
+	box-shadow: 0px 0px 5px green;
+	-webkit-box-shadow:0px 0px 5px green;
+}
+:invalid{
+	border-color:red;
+	box-shadow: 0px 0px 5 0px red;
+	-webkit-box-shadow:0px 0px 50px red;
+}
+form table{
+	width: 100%;
+	border: 0px solid white;
+	padding:0px;
+	margin:auto;
+}
+form {
+	font-family: ubuntuBoldItalic;
+	color:black;
+	text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+	border:1px solid white;
+	border-radius: 0px 15px 0px 15px;
+	-webkit-border-radius: 0px 15px 0px 15px;
+	box-shadow: 10px 10px 25px rgba (0,0,0,0.5);
+	-webkit-box-shadow: 10px 10px 25px rgba (0,0,0,0.5);
+	background:rgba (255,255,255,0.5);
+	margin:auto;
+	width:80%;
+	padding:10px;
+}	
+form input,form textarea {
+font-family: ubuntuRegular;
+font-size:10px;
+background: rgba (255,255,255,0.5);
+border : 1px dotted white;
+box-shadow: 0px 0px 5px rgba (0,0,0,0.5);
+-webkit-box-shadow: 0px 0px 5px rgba (0,0,0,0.5);
+border-radius:0px 5px 0px 5px;
+-webkit-border-radius:0px 5px 0px 5px;
+
+}

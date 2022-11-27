@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<style type="text/css">
+			div{
+			width:100px;
+			height:100px;
+			background:blue;
+			position:relative;
+			animation: primeraAnimacion 10s;
+			-webkit-animation: primeraAnimacion 10s;				
+			}
+			@keyframes primeraAnimacion{
+			0%{background: blue; left:0px;top:0px;}
+			20%{background: red;left:0px;top:0px;}
+			50%{background: yellow;left:100px;top:0px;}
+			75%{background: green;left:100px;top:100px;}
+			100%{background: blue;left:0px;top:0px;}
+			}
+			@-webkit-keyframes primeraAnimacion{
+			0%{background: blue; left:0px;top:0px;}
+			20%{background: red;left:0px;top:0px;}
+			50%{background: yellow;left:100px;top:0px;}
+			75%{background: green;left:100px;top:100px;}
+			100%{background: blue;left:0px;top:0px;}
+			}
+			/*recomendación empezar y perminar con el mismo color asi la transición no se nota*/
+			
+		</style>
+		
+	</head>
+	<body>
+		<div></div>
+		
+	</body>
+	
+</html>

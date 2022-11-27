@@ -1,0 +1,30 @@
+<html>
+	<body>
+	<canvas id="gradiente" width="400px" height="400px" style="border:1px solid black">
+	TU NAVEGADOR NO SOPORTA canvas
+	</canvas>
+		<script type="text/javascript" >
+		var c=document.getElementById("gradiente");
+		var cxt=c.getContext("2d")
+		
+		var grd=cxt.createLinearGradient(0,0,400,0);
+		  
+		
+		grd.addColorStop(0,"White");
+		grd.addColorStop(0.25,"red");
+		grd.addColorStop(0.5,"green");
+		grd.addColorStop(0.75,"blue");
+		
+		grd.addColorStop(1,"black");
+		
+		cxt.fillStyle=grd;
+		cxt.fillRect(0,0,400,400);
+	
+		</script>
+	</body>
+</html>
+
+estos 4 valores el vector de dirección del gradiente 
+		 degradado horizontal: ej:0,0 la x, y de primer fector del vector ej:400,0 la otra mitad. 
+		 degradado vertical: 0,0,0,400
+		 degradado diagonal:0,0,400,400
